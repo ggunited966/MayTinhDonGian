@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="number" id = "nhap1">
+	<input type="number" id = "nhap2">
+	<label id="ketqua"></label><br>
+	<button type = "submit" onclick = "cong()" >addtion (+)</button>
+	<button type = "submit" onclick = "tru()" >subtraction (-)</button>
+	<button type = "submit" onclick = "nhan()" >multiplication (x)</button>
+	<button type = "submit" onclick = "chia()" >division (:)</button>
+	<script>
+		function cong() {
+            var a = document.getElementById("nhap1").value;
+            var b = document.getElementById("nhap2").value;
+
+            document.getElementById("ketqua").innerHTML =  parseInt(a)+parseInt(b);
+        }
+        function tru() {
+            var a = document.getElementById("nhap1").value;
+            var b = document.getElementById("nhap2").value;
+
+            document.getElementById("ketqua").innerHTML = parseInt(a)-parseInt(b);
+        }
+        function nhan() {
+            var a = document.getElementById("nhap1").value;
+            var b = document.getElementById("nhap2").value;
+
+            document.getElementById("ketqua").innerHTML = parseInt(a)*parseInt(b);
+        }
+        function chia() {
+            var a = document.getElementById("nhap1").value;
+            var b = document.getElementById("nhap2").value;
+
+            document.getElementById("ketqua").innerHTML = parseInt(a)/parseInt(b);
+        }
+	</script>
+</body>
+</html>
